@@ -1,0 +1,29 @@
+{
+  "name": "@monorepo/package-c",
+  "version": "1.0.0",
+  "description": "An example monorepo package with tsup",
+  "main": "src/index.ts",
+  "scripts": {
+    "prettier": "prettier --check src/",
+    "prettier:fix": "prettier --write src/",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "verify": "run-p prettier lint",
+    "verify:fix": "yarn prettier:fix && yarn lint:fix",
+    "build": "tsup src/* --env.NODE_ENV production --dts-resolve"
+  },
+  "author": "Rahul Tarak",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^4.11.2"
+  },
+  "browser": "dist/index.js",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
