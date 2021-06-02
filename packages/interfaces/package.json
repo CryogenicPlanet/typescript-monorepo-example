@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo/interfaces",
+  "version": "1.0.0",
+  "description": "An example interface package of a monorepo",
+  "main": "src/index.ts",
+  "scripts": {
+    "prettier": "prettier --check src/",
+    "prettier:fix": "prettier --write src/",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "verify": "run-p prettier lint",
+    "verify:fix": "yarn prettier:fix && yarn lint:fix",
+    "build": "echo No build script!"
+  },
+  "author": "Rahul Tarak",
+  "license": "MIT"
+}
