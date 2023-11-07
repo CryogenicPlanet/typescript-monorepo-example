@@ -2,7 +2,7 @@
 
 This is a modern typescript monorepo example
 
-The full write up on how this monorepo works is and how to set it up [here]()
+The full write up on how this monorepo works is and how to set it up [here](https://github.com/nickpainter/typescript-monorepo-example.git)
 
 ## Package Breakdown 
 
